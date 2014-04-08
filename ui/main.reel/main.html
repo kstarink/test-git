@@ -2,21 +2,382 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "application": {},
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener"
+        },
+        "badge": {
+            "prototype": "digit/ui/badge.reel",
+            "properties": {
+                "element": {"#": "badge"}
+            }
+        },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
+        "condition": {
+            "prototype": "montage/ui/condition.reel",
+            "properties": {
+                "element": {"#": "condition"},
+                "removalStrategy": "hide"
+            }
+        },
+        "flow": {
+            "prototype": "montage/ui/flow.reel",
+            "properties": {
+                "element": {"#": "flow"},
+                "cameraPosition": [
+                    0,
+                    0,
+                    1500
+                ],
+                "content": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    25,
+                    26,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31,
+                    32,
+                    33,
+                    34,
+                    35,
+                    36,
+                    37,
+                    38,
+                    39,
+                    40,
+                    41,
+                    42,
+                    43,
+                    44,
+                    45,
+                    46,
+                    47,
+                    48,
+                    49,
+                    50,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    60,
+                    61,
+                    62,
+                    63,
+                    64,
+                    65,
+                    66,
+                    67,
+                    68,
+                    69,
+                    70,
+                    71,
+                    72,
+                    73,
+                    74,
+                    75,
+                    76,
+                    77,
+                    78,
+                    79,
+                    80,
+                    81,
+                    82,
+                    83,
+                    84,
+                    85,
+                    86,
+                    87,
+                    88,
+                    89,
+                    90,
+                    91,
+                    92,
+                    93,
+                    94,
+                    95,
+                    96,
+                    97,
+                    98,
+                    99
+                ],
+                "paths": [
+                    {
+                        "knots": [
+                            {
+                                "knotPosition": [
+                                    -2400,
+                                    0,
+                                    -1
+                                ],
+                                "nextHandlerPosition": [
+                                    -800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            },
+                            {
+                                "knotPosition": [
+                                    2400,
+                                    0,
+                                    -1
+                                ],
+                                "previousHandlerPosition": [
+                                    800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            }
+                        ],
+                        "headOffset": 0,
+                        "tailOffset": 0,
+                        "units": {}
+                    }
+                ]
+            }
+        },
+        "image": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "element": {"#": "image"},
+                "crossOrigin": null
+            }
+        },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"}
+            }
+        },
+        "listItem": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "listItem"}
+            }
+        },
+        "number": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "number"},
+                "value": 100
+            }
+        },
+        "overlay": {
+            "prototype": "montage/ui/overlay.reel",
+            "properties": {
+                "element": {"#": "overlay"}
+            }
+        },
+        "promiseController": {
+            "prototype": "montage/core/promise-controller"
+        },
+        "radio": {
+            "prototype": "digit/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radio"},
+                "checked": true
+            }
+        },
+        "radioButtonController": {
+            "prototype": "montage/core/radio-button-controller"
+        },
+        "rangeController": {
+            "prototype": "montage/core/range-controller",
+            "properties": {
+                "avoidsEmptySelection": true,
+                "clearSelectionOnOrderChange": true,
+                "content": [
+                    ""
+                ],
+                "deselectInvisibleContent": true,
+                "multiSelect": true,
+                "organizedContent": [],
+                "reversed": true,
+                "selectAddedContent": true,
+                "sortPath": "patth"
+            }
+        },
+        "repetition": {
+            "prototype": "montage/ui/repetition.reel",
+            "properties": {
+                "element": {"#": "repetition"},
+                "content": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        },
+        "select": {
+            "prototype": "digit/ui/select.reel",
+            "properties": {
+                "element": {"#": "select"}
+            }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
+        },
+        "slot": {
+            "prototype": "montage/ui/slot.reel",
+            "properties": {
+                "element": {"#": "slot"}
+            }
+        },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"}
+            }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            }
+        },
+        "text2": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text2"},
+                "value": "Text"
+            }
+        },
+        "textArea": {
+            "prototype": "digit/ui/text-area.reel",
+            "properties": {
+                "element": {"#": "textArea"},
+                "value": "Text"
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text"
+            }
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"},
+                "value": "Title"
             }
         }
+    }
     </script>
 </head>
 <body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main"></div>
+    <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <div data-montage-id="condition">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow"></div>
+            <div></div>
+            <div data-montage-id="overlay">
+                <ul data-montage-id="repetition">
+                    <li>
+                        Item
+                        <div data-montage-id="slot"></div>
+                        <div data-montage-id="substitution">
+                            <p data-montage-id="text"></p>
+                            <output data-montage-id="badge">
+                                <button data-montage-id="button"></button>
+                                <input type="checkbox" data-montage-id="checkbox">
+                                    <img data-montage-id="image">
+                                        <ul data-montage-id="list">
+                                            <li data-montage-id="listItem"></li>
+                                            <li>
+                                                Item
+                                            </li>
+                                            <input type="number" data-montage-id="number">
+                                            <input type="radio" data-montage-id="radio">
+                                                <select data-montage-id="select">
+                                                    <option value="">
+                                                        Select
+                                                    </option>
+                                                    <div data-montage-id="slider"></div>
+                                                    <p data-montage-id="text2"></p>
+                                                    <textarea data-montage-id="textArea">
+                                                        <input data-montage-id="textField" type="text">
+                                                            <h1 data-montage-id="title"></h1>
+                                                        </input>
+                                                    </textarea>
+                                                </select>
+                                            </input>
+                                        </ul>
+                                    </img>
+                                </input>
+                            </output>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
