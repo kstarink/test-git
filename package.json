@@ -3,7 +3,8 @@
     "version": "0.1.0",
     "dependencies": {
         "montage": "~0.14.0",
-        "digit": "~0.5.0"
+        "digit": "~0.5.0",
+        "matte": "0.2.0"
     },
     "devDependencies": {
         "montage-testing": "~0.4.0"
@@ -11,5 +12,21 @@
     "exclude": [
         "run-tests.html",
         "test"
-    ]
+    ],
+    "author": {
+        "name": "kristie",
+        "email": "kristie@starink.com",
+        "url": "http://montagestudio.com"
+    },
+    "maintainers": [
+        {
+            "name": "Kristie",
+            "email": "",
+            "url": ""
+        }
+    ],
+    "license": "bsd",
+    "homepage": "montagestudio.com",
+    "private": true,
+    "description": "description"
 }
