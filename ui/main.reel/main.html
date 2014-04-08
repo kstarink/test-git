@@ -15,7 +15,11 @@
         },
         "application": {},
         "actionEventListener": {
-            "prototype": "montage/core/event/action-event-listener"
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "dfd",
+                "handler": "jh"
+            }
         },
         "badge": {
             "prototype": "digit/ui/badge.reel",
@@ -314,8 +318,10 @@
             "properties": {
                 "element": {"#": "slider"},
                 "axis": "horizontal",
+                "enabled": true,
                 "max": 100,
                 "min": 0,
+                "step": "3",
                 "value": 50
             }
         },
@@ -354,6 +360,8 @@
             "prototype": "digit/ui/text-area.reel",
             "properties": {
                 "element": {"#": "textArea"},
+                "axis": "horizontal",
+                "enabled": true,
                 "value": "Text"
             }
         },
