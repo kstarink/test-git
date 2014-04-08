@@ -20,14 +20,19 @@
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
-                "element": {"#": "badge"}
+                "element": {"#": "badge"},
+                "identifier": "id",
+                "value": "val"
             }
         },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
+                "active": true,
                 "enabled": true,
+                "holdThreshold": "16",
+                "identifier": "id",
                 "label": "Button"
             }
         },
@@ -42,7 +47,9 @@
             "prototype": "montage/ui/condition.reel",
             "properties": {
                 "element": {"#": "condition"},
-                "removalStrategy": "hide"
+                "condition": "condition",
+                "identifier": "id",
+                "removalStrategy": "remove"
             }
         },
         "flow": {
@@ -156,6 +163,8 @@
                     98,
                     99
                 ],
+                "hasElasticScrolling": true,
+                "momentumDuration": "",
                 "paths": [
                     {
                         "knots": [
@@ -192,7 +201,9 @@
                         "tailOffset": 0,
                         "units": {}
                     }
-                ]
+                ],
+                "removalStrategy": "hide",
+                "stride": ""
             }
         },
         "image": {
@@ -218,23 +229,38 @@
             "prototype": "digit/ui/number-field.reel",
             "properties": {
                 "element": {"#": "number"},
+                "enabled": true,
                 "value": 100
             }
         },
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
-                "element": {"#": "overlay"}
+                "element": {"#": "overlay"},
+                "delegate": "del",
+                "dismissOnExternalInteraction": true,
+                "identifier": "id",
+                "position": "pos"
             }
         },
         "promiseController": {
-            "prototype": "montage/core/promise-controller"
+            "prototype": "montage/core/promise-controller",
+            "properties": {
+                "error": "error",
+                "fulfilled": true,
+                "pending": true,
+                "promise": "promise",
+                "rejected": true,
+                "value": "value"
+            }
         },
         "radio": {
             "prototype": "digit/ui/radio-button.reel",
             "properties": {
                 "element": {"#": "radio"},
-                "checked": true
+                "active": true,
+                "checked": true,
+                "enabled": true
             }
         },
         "radioButtonController": {
@@ -249,6 +275,7 @@
                     ""
                 ],
                 "deselectInvisibleContent": true,
+                "filterPath": "filterpath",
                 "multiSelect": true,
                 "organizedContent": [],
                 "reversed": true,
@@ -260,11 +287,20 @@
             "prototype": "montage/ui/repetition.reel",
             "properties": {
                 "element": {"#": "repetition"},
+                "clonesChildComponents": true,
                 "content": [
                     1,
                     2,
-                    3
-                ]
+                    3,
+                    "",
+                    ""
+                ],
+                "identifier": "id",
+                "isSelectionEnabled": true,
+                "selectedIndexes": [
+                    0
+                ],
+                "selection": "selection"
             }
         },
         "select": {
@@ -292,13 +328,18 @@
         "substitution": {
             "prototype": "montage/ui/substitution.reel",
             "properties": {
-                "element": {"#": "substitution"}
+                "element": {"#": "substitution"},
+                "identifier": "id",
+                "shouldLoadComponentTree": true,
+                "switchValue": "switch",
+                "transition": "transition"
             }
         },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
                 "element": {"#": "text"},
+                "identifier": "id",
                 "value": "Text"
             }
         },
