@@ -1,0 +1,1 @@
+montageDefine("5537f0c","test-module",{dependencies:["montage/core/core"],factory:function(e,t){var n=e("montage/core/core").Montage;t.TestModule=n.specialize({constructor:{value:function(){this.super()}}})}});
