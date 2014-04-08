@@ -24,7 +24,6 @@
         "badge": {
             "prototype": "digit/ui/badge.reel",
             "properties": {
-                "element": {"#": "badge"},
                 "identifier": "id",
                 "value": "val"
             }
@@ -32,7 +31,6 @@
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
-                "element": {"#": "button"},
                 "active": true,
                 "enabled": true,
                 "holdThreshold": "16",
@@ -50,7 +48,7 @@
         "condition": {
             "prototype": "montage/ui/condition.reel",
             "properties": {
-                "element": {"#": "condition"},
+                "element": {"#": "badge"},
                 "condition": "condition",
                 "identifier": "id",
                 "removalStrategy": "remove"
@@ -232,7 +230,7 @@
         "number": {
             "prototype": "digit/ui/number-field.reel",
             "properties": {
-                "element": {"#": "number"},
+                "element": {"#": "radio"},
                 "enabled": true,
                 "value": 100
             }
@@ -261,7 +259,7 @@
         "radio": {
             "prototype": "digit/ui/radio-button.reel",
             "properties": {
-                "element": {"#": "radio"},
+                "element": {"#": "number"},
                 "active": true,
                 "checked": true,
                 "enabled": true
@@ -290,7 +288,7 @@
         "repetition": {
             "prototype": "montage/ui/repetition.reel",
             "properties": {
-                "element": {"#": "repetition"},
+                "element": {"#": "button"},
                 "clonesChildComponents": true,
                 "content": [
                     1,
@@ -316,7 +314,7 @@
         "slider": {
             "prototype": "digit/ui/slider.reel",
             "properties": {
-                "element": {"#": "slider"},
+                "element": {"#": "substitution"},
                 "axis": "horizontal",
                 "enabled": true,
                 "max": 100,
@@ -334,7 +332,6 @@
         "substitution": {
             "prototype": "montage/ui/substitution.reel",
             "properties": {
-                "element": {"#": "substitution"},
                 "identifier": "id",
                 "shouldLoadComponentTree": true,
                 "switchValue": "switch",
@@ -352,7 +349,6 @@
         "text2": {
             "prototype": "digit/ui/text.reel",
             "properties": {
-                "element": {"#": "text2"},
                 "value": "Text"
             }
         },
@@ -368,14 +364,14 @@
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
-                "element": {"#": "textField"},
+                "element": {"#": "repetition"},
                 "placeholderValue": "Text"
             }
         },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
-                "element": {"#": "title"},
+                "element": {"#": "condition"},
                 "value": "Title"
             }
         }
@@ -397,30 +393,25 @@
                             <output data-montage-id="badge">
                                 <button data-montage-id="button"></button>
                                 <input type="checkbox" data-montage-id="checkbox">
-                                    <img data-montage-id="image">
-                                        <ul data-montage-id="list">
-                                            <li data-montage-id="listItem"></li>
-                                            <li>
-                                                Item
-                                            </li>
-                                            <input type="number" data-montage-id="number">
-                                            <input type="radio" data-montage-id="radio">
-                                                <select data-montage-id="select">
-                                                    <option value="">
-                                                        Select
-                                                    </option>
-                                                    <div data-montage-id="slider"></div>
-                                                    <p data-montage-id="text2"></p>
-                                                    <textarea data-montage-id="textArea">
-                                                        <input data-montage-id="textField" type="text">
+                                <img data-montage-id="image">
+                                <ul data-montage-id="list">
+                                    <li data-montage-id="listItem"></li>
+                                    <li>
+                                        Item
+                                    </li>
+                                    <input type="number" data-montage-id="number">
+                                    <input type="radio" data-montage-id="radio">
+                                    <select data-montage-id="select">
+                                        <option value="">
+                                            Select
+                                        </option>
+                                    </select>
+                                    <textarea data-montage-id="textArea">
+                                        <input data-montage-id="textField" type="text">
                                                             <h1 data-montage-id="title"></h1>
                                                         </input>
-                                                    </textarea>
-                                                </select>
-                                            </input>
-                                        </ul>
-                                    </img>
-                                </input>
+                                    </textarea>
+                                </ul>
                             </output>
                         </div>
                     </li>
